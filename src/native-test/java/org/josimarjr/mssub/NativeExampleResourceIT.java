@@ -1,4 +1,4 @@
-package org.mssub.josimarjr;
+package org.josimarjr.mssub;
 
 import io.quarkus.test.junit.NativeImageTest;
 
