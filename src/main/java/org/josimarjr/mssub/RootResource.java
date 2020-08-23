@@ -6,6 +6,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import org.josimarjr.mssub.Healthcheck.HealthcheckService;
+
 @Path("/")
 public class RootResource {
 
@@ -13,7 +15,7 @@ public class RootResource {
     HealthcheckService service;
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String root() {
         return service.Ok();
     }

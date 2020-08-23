@@ -1,4 +1,4 @@
-package org.josimarjr.mssub;
+package org.josimarjr.mssub.Healthcheck;
 
 import javax.enterprise.context.ApplicationScoped;
 

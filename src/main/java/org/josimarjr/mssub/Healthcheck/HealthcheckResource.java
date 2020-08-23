@@ -1,4 +1,4 @@
-package org.josimarjr.mssub;
+package org.josimarjr.mssub.Healthcheck;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -13,7 +13,7 @@ public class HealthcheckResource {
     HealthcheckService service;
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     public String healthcheck() {
         return service.Ok();
     }
