@@ -8,12 +8,14 @@ bin/
 *.ipr
 *.iml
 *.iws
+.idea/workspace.xml
 
 # NetBeans
 nb-configuration.xml
 
 # Visual Studio Code
 .factorypath
+.workdir
 
 # OSX
 .DS_Store
