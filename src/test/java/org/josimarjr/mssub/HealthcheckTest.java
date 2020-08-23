@@ -4,7 +4,7 @@ import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.*;
 
 @QuarkusTest
 public class HealthcheckTest {
@@ -15,7 +15,7 @@ public class HealthcheckTest {
           .when().get("/healthcheck")
           .then()
              .statusCode(200)
-             .body(is("{'status': 'ok'}"));
+             .body("status", equalTo("ok"));
     }
 
 }
