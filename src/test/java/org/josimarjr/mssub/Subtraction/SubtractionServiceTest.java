@@ -19,4 +19,14 @@ public class SubtractionServiceTest {
         int result = subtraction.Subtracts(x, y);
         assertEquals(12, result);
     }
+
+    @Test
+    public void subtractTwoDecimals() {
+        SubtractionService subtraction = new SubtractionService();
+        double x = 13.01;
+        double y = 1.13;
+
+        double result = subtraction.Subtracts(x, y);
+        assertEquals(11.88, result, 0.001);
+    }
 }

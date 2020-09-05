@@ -6,6 +6,10 @@ import javax.enterprise.context.ApplicationScoped;
 public class SubtractionService {
 
     int Subtracts(int value1, int value2) {
-        return value1-value2;
+        return value1 - value2;
+    }
+
+    public double Subtracts(double value1, double value2) {
+        return value1 - value2;
     }
 }
