@@ -9,6 +9,7 @@ bin/
 *.iml
 *.iws
 .idea/workspace.xml
+.idea/uiDesigner.xml
 
 # NetBeans
 nb-configuration.xml
