@@ -17,4 +17,5 @@ public class HealthcheckResource {
     public String healthcheck() {
         return service.Ok();
     }
+
 }

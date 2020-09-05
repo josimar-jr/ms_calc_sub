@@ -1,13 +1,14 @@
-package org.josimarjr.mssub;
+package org.josimarjr.mssub.Healthcheck;
 
 import io.quarkus.test.junit.QuarkusTest;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.*;
 
 @QuarkusTest
-public class HealthcheckTest {
+@Tag("functional-api")
+public class HealthcheckResourceTest {
 
     @Test
     public void testHealthcheckEndpoint() {
