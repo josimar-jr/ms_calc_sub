@@ -21,5 +21,4 @@ public class HealthcheckResource {
         response.put("status", service.Ok());
         return response.toString();
     }
-
 }
