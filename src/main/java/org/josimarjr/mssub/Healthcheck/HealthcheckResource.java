@@ -1,5 +1,7 @@
 package org.josimarjr.mssub.Healthcheck;
 
+import org.json.JSONObject;
+
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -15,7 +17,9 @@ public class HealthcheckResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public String healthcheck() {
-        return service.Ok();
+        JSONObject response = new JSONObject();
+        response.put("status", service.Ok());
+        return response.toString();
     }
 
 }

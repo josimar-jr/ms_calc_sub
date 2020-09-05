@@ -7,8 +7,6 @@ import javax.enterprise.context.ApplicationScoped;
 @ApplicationScoped
 public class HealthcheckService {
     public String Ok() {
-        JSONObject response = new JSONObject();
-        response.put("status", "ok");
-        return response.toString();
+        return "ok";
     }
 }
